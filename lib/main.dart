@@ -60,7 +60,9 @@ class _MyHomePageState extends State<MyHomePage> {
       _counter++;
     });
   }
+//function goes here diobo
 
+// end function block
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -95,6 +97,29 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 16),
+            ),
+
+            Padding(padding: EdgeInsets.symmetric(horizontal: 10, vertical: 16),
+              child: TextFormField(
+                decoration:InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Enter your username',
+                ),
+              ),
+            ),
+            Padding(padding: EdgeInsets.symmetric(horizontal: 10, vertical: 16),
+              child: TextFormField(
+                obscureText: true,
+                decoration:InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Enter your password',
+              ),
+            ),
+           ),
+            //aggikungere qui gli oggetti caratteristici
+            TextButton.icon(onPressed: _incrementCounter, icon: Icon(Icons.ice_skating), label: Text('cliccami')),
             const Text(
               'You have pushed the button this many times:',
             ),
@@ -105,6 +130,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
