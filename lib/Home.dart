@@ -9,16 +9,17 @@ class _homeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.red,
+      color: Colors.blue,
       child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text('Screen 1'),
+            Text('HOME'),
+
             ElevatedButton(
-              child: Text('Next'),
+              child: Text('Login'),
               onPressed: () {
-                Navigator.pushNamed(context, '/home');
+                Navigator.pushNamed(context, '/login');
               },
             ),
           ],

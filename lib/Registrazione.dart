@@ -9,14 +9,14 @@ class _RegistrazioneState extends State<Registrazione> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.red,
+      color: Colors.greenAccent,
       child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text('Screen 1'),
+            Text('REGISTRAZIONE'),
             ElevatedButton(
-              child: Text('Next'),
+              child: Text('Login'),
               onPressed: () {
                 Navigator.pushNamed(context, '/home');
               },
